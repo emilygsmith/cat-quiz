@@ -1,0 +1,12 @@
+body {
+    background-color: eee;
+    align: center;
+}
+
+h1 {
+    color: #555;
+}
+
+.navbar {
+    width: 400px;
+}
