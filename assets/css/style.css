@@ -24,8 +24,13 @@ body {
     text-align: center;
 }
 
+.quiz-content {
+    margin: 20px;
+}
+
 .questions {
     padding: 20px;
+    margin-top: -50px;
 }
 
 .answers {
@@ -58,8 +63,22 @@ a:hover {
     font-size: 2vw;
 }
 
-.intro {
+/* ----------------Buttons */
 
+button {
+    margin-top: 10px;
+    padding: 20px 20px;
+    background: #555;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    background: #ccc;
+    color: #333;
+    cursor: pointer;
 }
 
 /* -----------------Images */
@@ -67,6 +86,7 @@ a:hover {
 .main-image {
     width: 100%;
     margin: auto;
+
 }
 
 /* ------------------Header */
@@ -98,4 +118,8 @@ a:hover {
     .question-heading {
         font-size: 15px;
     }
+  }
+
+  .hide {
+    display: none;
   }
