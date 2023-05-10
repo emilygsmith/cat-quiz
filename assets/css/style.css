@@ -37,6 +37,26 @@ body {
     padding: 20px;
 }
 
+.about {
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
+
+.about-sections {
+    margin: auto;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.feedback {
+        margin: auto;
+        padding: 10px;
+        width: 70%;
+}
+
 /* ----------------Links */
 
 a {
@@ -46,6 +66,15 @@ a {
 
 a:hover {
     color: #fff;
+}
+
+.social-media a {
+    font-size: 30px;
+    color: #555;
+}
+
+.social-media a:hover {
+    color: #333;
 }
 
 /* ---------------Headings */
@@ -95,14 +124,25 @@ button:hover {
     margin: auto;
     text-align: center;
     font-size: 30px;
+    color: #555;
 }
 
 /* -----------------Footer */
+
+.footer {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
 
 /* ----------------Media Queries */
 
 @media (max-width: 600px) {
     .navbar {
+        font-size: 20px;
+    }
+    .footer {
         font-size: 20px;
     }
     .main-container {
@@ -116,6 +156,37 @@ button:hover {
         font-size: 15px;
     }
     .question-heading {
+        font-size: 15px;
+    }
+    .h3 {
+        font-size: 15px;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 950px) {
+    body {
+        font-size: 20px;
+    }
+    .navbar {
+        font-size: 20px;
+    }
+    .footer {
+        font-size: 20px;
+    }
+    .main-container {
+      width: 70%;
+    }
+    .main-heading {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    .main-subheading {
+        font-size: 30px;
+    }
+    .question-heading {
+        font-size: 15px;
+    }
+    .h3 {
         font-size: 15px;
     }
   }
