@@ -54,15 +54,21 @@ let quizQuestions = [
 // Initialize variables
 let currentQuestion = 0;
 let score = 0;
+let scoreContainer;
+let resultElement;
+
 // Function to display the current question
 function displayQuestion() {
 const questionContainer = document.getElementById("question-container");
 const question = quizQuestions[currentQuestion];
 const options = question.options;
+
 questionContainer.innerHTML = "";
+
 const questionElement = document.createElement("h3");
 questionElement.textContent = question.question;
 questionContainer.appendChild(questionElement);
+
 for (let i = 0; i < options.length; i++) {
   const optionElement = document.createElement("button");
   optionElement.textContent = options[i];
@@ -70,16 +76,22 @@ for (let i = 0; i < options.length; i++) {
   questionContainer.appendChild(optionElement);
 }
 }
+
 // Check selected answer
 function checkAnswer(event) {
 const selectedOption = event.target.textContent;
 const question = quizQuestions[currentQuestion];
+
 // Check selected option correct
 if (selectedOption === question.answer) {
   score++;
 }
+
+scoreContainer.textContent = "Score: " + score + "/10";
+
 // Move to next question
 currentQuestion++;
+
 // Check whether quiz completed
 if (currentQuestion === quizQuestions.length) {
   displayResult();
@@ -87,22 +99,55 @@ if (currentQuestion === quizQuestions.length) {
   displayQuestion();
 }
 }
+
 // Display result
 function displayResult() {
-const resultContainer = document.getElementById("result-container");
-resultContainer.innerHTML = "";
-const resultElement = document.createElement("h3");
-let lowScore = "Oh no! Hear meow-t, you may need to brush up on your knowledge! You scored ";
-let highScore = "Amazing - you've finished with a purrfect score of ";
-let quote = "Huzzah, you've finished with a respectable score of ";
-if (score < 4) {
-  quote = lowScore;
+  const resultContainer = document.getElementById("result-container");
+  resultContainer.innerHTML = "";
+
+  resultContainer.appendChild(scoreContainer);
+
+  let lowScore = "Oh no! Hear meow-t, you may need to brush up on your knowledge! You scored ";
+  let highScore = "Amazing - you've finished with a purrfect score of ";
+  let quote = "Huzzah, you've finished with a respectable score of ";
+  if (score < 4) {
+    quote = lowScore;
+  }
+  if (score > 7) {
+    quote = highScore;
+  }
+  resultElement = document.createElement("h3");
+  resultElement.textContent = quote + score + "/10. Hope you've learnt some interesting cat facts along the way!";
+  resultContainer.appendChild(resultElement);
+
+  const resetButton = document.createElement("button");
+  resetButton.textContent = "Reset Quiz";
+  resetButton.addEventListener("click", resetQuiz);
+  resultContainer.appendChild(resetButton);
 }
-if (score > 7) {
-  quote = highScore;
+
+function resetQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  displayQuestion();
+
+  scoreContainer = document.createElement("div");
+  scoreContainer.textContent = "Score: 0/10";
+  resultElement = document.createElement("h3");
+
+  const resultContainer = document.getElementById("result-container");
+  resultContainer.innerHTML = "";
+  resultContainer.appendChild(scoreContainer);
+  resultContainer.appendChild(resultElement);
 }
-resultElement.textContent = quote + score + "/10. Hope you've learnt some interesting cat facts along the way!";
-resultContainer.appendChild(resultElement);
-}
-// Start quiz
-displayQuestion();
+
+window.addEventListener("DOMContesntLoaded", function() {
+    const questionContainer = document.getElementById("question-container");
+    const resultContainer = document.getElementById("result-container");
+  
+    scoreContainer = document.createElement("div");
+    scoreContainer.textContent = "Score: 0/10";
+    resultContainer.appendChild(scoreContainer);
+
+  displayQuestion();
+});

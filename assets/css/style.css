@@ -33,6 +33,11 @@ body {
     margin-top: -50px;
 }
 
+#result-container {
+    font-weight: bold;
+    text-align: center;
+}
+
 .answers {
     padding: 20px;
 }
@@ -56,6 +61,14 @@ body {
         margin: auto;
         padding: 10px;
         width: 70%;
+        text-align: center;
+}
+
+/* -----------------Form */
+
+textarea {
+    width: 70%;
+    height: 100px;
 }
 
 /* ----------------Links */
