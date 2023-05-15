@@ -141,7 +141,7 @@ function resetQuiz() {
   resultContainer.appendChild(resultElement);
 }
 
-window.addEventListener("DOMContesntLoaded", function() {
+window.addEventListener("DOMContentLoaded", function() {
     const questionContainer = document.getElementById("question-container");
     const resultContainer = document.getElementById("result-container");
   
