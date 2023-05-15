@@ -1,5 +1,7 @@
 # The Big Cat Quiz
 
+[See the live website!](https://emilygsmith.github.io/cat-quiz-project-2/)
+
 ## Existing Features
 
 ### Navigation Bar
@@ -19,9 +21,30 @@
 * The colour scheme of the rest of the site is based on the muted colours of the hero image.
 * The image is fully responsive and resizes based on the width of the viewing device.
 
-### Quiz Content
+### Quiz Questions & Answers
 
-INFO ON QUIZ CONTENT TO GO HERE
+![Quiz Questions & Answers](assets/images/quiz-questions.png)
+
+* The quiz has been coded using JavaScript, and consists of 10 questions presented with a greyscale colour palette.
+* The options change colour when hovered over.
+* Once the user has clicked on an answer, the next question generates, hiding the previous question.
+* The score container underneath the main quiz content increases by 1 if a question is answered correctly, otherwise it remains the same.
+
+### Quiz Score Container
+
+![Quiz Score Container](assets/images/quiz-score-container.png)
+
+* The score in the score container underneath the main quiz content increases by 1 if a question is answered correctly.
+* If a question is answered incorrectly the score in the score container will remain the same.
+* The score container disappears after the final question is answered as the final result is displayed within the quote message at the end when the user's result is revealed.
+
+### Quiz Completion
+
+![Quiz Completion Screen](assets/images/quiz-completed.png)
+
+* Upon answering all ten questions, the user will receive one of three result messages dependent on whether they answered 1-3, 4-7 or 8-10 questions correctly.
+* A Reset Quiz button will appear underneath the result message, and if the user clicks, this will reset the quiz.
+* Once the quiz is reset it will take the user back to the first question and the score container will reappear, set back to zero.
 
 ### Footer
 
@@ -38,7 +61,8 @@ INFO ON QUIZ CONTENT TO GO HERE
 
 ### Give Feedback Page
 
-INFO ON GIVE FEEDBACK PAGE TO GO HERE
+* The Feedback page includes a form which allows the user to enter their name/contact email address and any comments or requests they wish to pass on.
+* The user can enter their name, email address and any relevant comments and click the submit button.
 
 ## Future Features
 
@@ -81,46 +105,85 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 * I have used a hero image from Unsplash showing a girl and her silver tabby cat looking at a phone, implied to be completing the quiz together.
 * The rest of the site's colours are based on the muted colours in this image.
 
-### Wireframes
+### Wireframes - Homepage
 
-WIREFRAMES TO GO HERE
+* [Home - Laptop](assets/images/wireframe-home-laptop.png)
+* [Home - Tablet](assets/images/wireframe-home-tablet.png)
+* [Home - Phone](assets/images/wireframe-home-phone.png)
+
+### Wireframes - About Us Page
+* [About - Laptop](assets/images/wireframe-about-laptop.png)
+* [About - Tablet](assets/images/wireframe-about-tablet.png)
+* [About - Phone](assets/images/wireframe-about-phone.png)
+
+### Wireframes - Give Feedback Page
+* [Feedback - Laptop](assets/images/wireframe-feedback-laptop.png)
+* [Feedback - Tablet](assets/images/wireframe-feedback-tablet.png)
+* [Feedback - Phone](assets/images/wireframe-feedback-phone.png)
 
 ## Testing Features
 
 | Feature | Expectation | Action | Result |
 | ------- | -------- | ------- | -------|
-| Navigation bar links | Expectation here | Action here | Result here |
-| Navigation bar hover | Expectation here | Action here | Result here |
-| Footer link | Expectation here | Action here | Result here |
-| Footer hover | Expectation here | Action here | Result here |
-| Quiz answer selection | When an answer is selected, the score updates and the next question is shown. | Clicked on an answer in the quiz. | Result here |
-| Quiz completion | When all the questions have been answered, the user receives a response based on the amount answered correctly. | Answered all questions in the quiz. | Result here |
-| Feedback form | You are able to fill in the form and submit. | Filled in the feedback form with text and cliked on Submit. | Result here |
+| Navigation bar links | When the user clicks on a navigation link in the nav bar, they will be taken to that named page. | Clicked on Home, About Us page and Give Feedback page respectively. | Directed to the correct page each time. |
+| Navigation bar hover | When the user hovers over a link in the nav bar, it will change to a lighter colour. | Hovered over each clickable link on each page. | Each clickable link changed to a lighter colour when hovered over. |
+| Footer link | When the 'Go Back Up' link is clicked, the user will be taken to the top of the page. | Clicked on 'Go Back Up' link on each page. | The user is taken to the top of the page each time the footer link is clicked. |
+| Footer hover | When the user hovers over the footer link, it will change to a lighter colour. | Hovered over the footer link on each page. | The footer link chagned to a lighter colour when hovered over on each page. |
+| Quiz answer selection | When an answer is selected, the score updates and the next question is shown. | Answered all ten questions in the quiz. | Each time a question was answered, the next question would appear and hide the previous question, and the score would increment by 1 if correct. |
+| Quiz completion | When all the questions have been answered, the user receives a response based on the amount answered correctly. | Answered all questions in the quiz, getting one question right, six questions right and nine questions right respectively. | The appropriate result quote was relayed each time based on the amount of questions answered correctly. |
+| Feedback form | You are able to fill in the form and submit. | Filled in the feedback form with text and cliked on Submit. | The information was submitted. |
+| Social media icons | Clicking on each icon will take you to the respective social media site. | Clicked on each icon. | The user is successfully directed to the appropriate site by clikcing on the correlating icon. | 
 
 ## Testing User Stories
 
 ### First Time Visitor Goals & Solutions
 
+* As a first time visitor, I want to be able to easily navigate between pages on the site.
+    * There is a navigation bar in relatively large font situated at the top of each page for easy navigation throughout the site.
+    * Depending on what page the user is currently visiting, the page you are visiting will be greyed out, and the two links to the other two respective pages will be clickable.
+* As a first time visitor, I want to be able to complete a fully functional quiz that keeps track of my score along he way.
+    * The quiz on the site is fully functional and has a score container that keeps track of your score throughout.
+    * The score container resets along with the questions when the user clicks on the 'Reset Quiz' button.
+* As a first time visitor, I want to be able to easily restart the quiz to try and improve my score and get 10/10.
+    * There is a 'Reset Quiz' button the user can click on once they have answered all ten questions the first time around.
+    * This will reset both the questions and the score in the score container which will return to 0 and increment again as normal when questions are answered correctly.
+* As a first time visitor, I want to find out more about who the quiz was created by.
+    * There is a direct link in the navigation bar to the 'About Us' page which gives information on the charity who have created the website.
+    * The About Us page includes a brief overview, contact information and opening hours of the charity.
+
 ### Returning Visitor Goals & Solutions
+* As a returning visitor, I want to find out more about the charity and its values.
+    * The About Us page includes information about the charity, its mission, and further contact information.
+* As a returning visitor, I want to find new content such as new quizzes and event information (future features).
+    * New features such as extra quizzes and games, as well as a location tool via Google Maps API to show locations of the charity shops and offices in the UK, will be added in future updates.
 
 ### Frequent Visitor Goals & Solutions
+* As a frequent visitor, I want easy access to the charity's social media links to keep up-to-date with the latest updates and events.
+    * There are direct links to the charity's social media accounts on the About Us section.
+    * Each link is clickable via respective FontAwesome icons.
+* As a first time visitor, I want to be able to provide feedback and get in touch with the charity to advise on what I feel is working and what I'd like to see added to the site.
+    * There is a direct link in the navigation bar to the Give Feedback page.
+    * The Give Feedback page includes a form where the user can provide their contact details and feedback for the charity to look into and respond where appropriate.
 
 ## Device Responsiveness
 
 ### Homepage tested on:
-* Laptop preview goes here
-* Tablet preview goes here
-* Phone preview goes here
+* 15" Dell Laptop - [top of screen](assets/images/site-preview-15-laptop-top.png) and [bottom of screen](assets/images/site-preview-15-laptop-bottom.png)
+* [Surface Pro 7 tablet](assets/images/site-preview-tablet)
+* [iPhone SE](assets/images/site-preview-iphone-se.png)
+* [Samsung Galaxy S8+](assets/images/site-preview-samsung-phone.png)
 
 ### About Us page tested on:
-* Laptop preview goes here
-* Tablet preview goes here
-* Phone preview goes here
+* [15" Dell Laptop](assets/images/about-preview-laptop.png)
+* [Surface Pro 7 tablet](assets/images/about-preview-tablet.png)
+* [iPhone SE](assets/images/about-preview-iphone-se.png)
+* [Samsung Galaxy S8+](assets/images/about-preview-samsung-phone.png)
 
 ### Give Feedback page tested on:
-* Laptop preview goes here
-* Tablet preview goes here
-* Phone preview goes here
+* [15" Dell Laptop](assets/images/feedback-preview-laptop.png)
+* [Surface Pro 7 tablet](assets/images/feedback-preview-tablet.png)
+* [iPhone SE](assets/images/feedback-preview-iphone-se.png)
+* [Samsung Galaxy S8+](assets/images/feedback-preview-samsung-phone.png)
 
 ## Validator Testing
 
@@ -140,12 +203,16 @@ WIREFRAMES TO GO HERE
 
 ### Images
 
-* Hero image credit
+* [Hero image credit](https://unsplash.com/photos/lz_VB9yEc_c)
 
 ### Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programmes Used
-[GitHub](https://github.com/) was used to store the project code after being pushed to Git via GitHub Pages.
+* [GitHub](https://github.com/) was used to store the project code after being pushed to Git via GitHub Pages.
+* [Unsplash](https://www.unsplash.com/) was used to locate and display a hero image on the site across all three pages.
 * [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) was used to style the site, particularly the containers in the About Us page, and the general responsiveness of the site across different devices.
 * [Google Fonts](https://fonts.google.com/) was used to import the 'Poppins' font into the style.css file which is used throughout the entire website.
 * [Font Awesome](https://fontawesome.com/) was used to import social media icons into the About Us page.
