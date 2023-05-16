@@ -187,7 +187,7 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 
 ### Homepage tested on:
 * 15" Dell Laptop - [top of screen](assets/images/site-preview-15-laptop-top.png) and [bottom of screen](assets/images/site-preview-15-laptop-bottom.png)
-* [Surface Pro 7 tablet](assets/images/site-preview-tablet)
+* [Surface Pro 7 tablet](assets/images/site-preview-tablet.png)
 * [iPhone SE](assets/images/site-preview-iphone-se.png)
 * [Samsung Galaxy S8+](assets/images/site-preview-samsung-phone.png)
 
