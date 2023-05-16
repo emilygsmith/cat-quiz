@@ -146,11 +146,11 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 | Navigation bar links | When the user clicks on a navigation link in the nav bar, they will be taken to that named page. | Clicked on Home, About Us page and Give Feedback page respectively. | Directed to the correct page each time. |
 | Navigation bar hover | When the user hovers over a link in the nav bar, it will change to a lighter colour. | Hovered over each clickable link on each page. | Each clickable link changed to a lighter colour when hovered over. |
 | Footer link | When the 'Go Back Up' link is clicked, the user will be taken to the top of the page. | Clicked on 'Go Back Up' link on each page. | The user is taken to the top of the page each time the footer link is clicked. |
-| Footer hover | When the user hovers over the footer link, it will change to a lighter colour. | Hovered over the footer link on each page. | The footer link chagned to a lighter colour when hovered over on each page. |
+| Footer hover | When the user hovers over the footer link, it will change to a lighter colour. | Hovered over the footer link on each page. | The footer link changed to a lighter colour when hovered over on each page. |
 | Quiz answer selection | When an answer is selected, the score updates and the next question is shown. | Answered all ten questions in the quiz. | Each time a question was answered, the next question would appear and hide the previous question, and the score would increment by 1 if correct. |
 | Quiz completion | When all the questions have been answered, the user receives a response based on the amount answered correctly. | Answered all questions in the quiz, getting one question right, six questions right and nine questions right respectively. | The appropriate result quote was relayed each time based on the amount of questions answered correctly. |
-| Feedback form | You are able to fill in the form and submit. | Filled in the feedback form with text and cliked on Submit. | The information was submitted. |
-| Social media icons | Clicking on each icon will take you to the respective social media site. | Clicked on each icon. | The user is successfully directed to the appropriate site by clikcing on the correlating icon. | 
+| Feedback form | You are able to fill in the form and submit. | Filled in the feedback form with text and clicked on Submit. | The information was submitted. |
+| Social media icons | Clicking on each icon will take you to the respective social media site. | Clicked on each icon. | The user is successfully directed to the appropriate site by clicking on the correlating icon. | 
 
 ## Testing User Stories
 
@@ -220,7 +220,7 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 ## Debugging
 
 * CSS Validator initally returned errors with an unclosed div tag and unnecessary closing break tag. I added the additional div and removed the closing break tag, re-ran the validator test, and all was returned OK.
-* Running Lighthouse revealed there were some issues causing slow-down of the site rendering. I moved the script tag from the head in the HTML down to just before the closing body tag and this improved the performance immensely.
+* Running Lighthouse initially revealed there were some issues causing slow-down of the site rendering. I moved the script tag from the head in the HTML down to just before the closing body tag and this improved the performance immensely.
 
 ## Credit
 
