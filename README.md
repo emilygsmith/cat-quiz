@@ -27,7 +27,7 @@ I wanted to continue the theme of cat-related projects and create a quiz revolvi
 
 ### Hero Image
 
-![Image of a girl and her cat on a keyboard](assets/images/main-image-v2.png)
+![Image of a girl and her cat on a keyboard](assets/images/main-image-v3.png)
 
 * The hero image is present on all three pages.
 * The colour scheme of the rest of the site is based on the muted colours of the hero image.
