@@ -213,11 +213,14 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 
 ## Lighthouse Testing
 
-* Lighthouse testing goes here
+![Lighthouse Testing](assets/images/lighthouse-index.png)
+
+* I have run the quiz site through Lighthouse testing which achieves high scores across the board.
 
 ## Debugging
 
 * CSS Validator initally returned errors with an unclosed div tag and unnecessary closing break tag. I added the additional div and removed the closing break tag, re-ran the validator test, and all was returned OK.
+* Running Lighthouse revealed there were some issues causing slow-down of the site rendering. I moved the script tag from the head in the HTML down to just before the closing body tag and this improved the performance immensely.
 
 ## Credit
 
@@ -232,6 +235,7 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 
 ### Frameworks, Libraries & Programmes Used
 * [GitHub](https://github.com/) was used to store the project code after being pushed to Git via GitHub Pages.
+* [GitPod](https://www.gitpod.io/) was used to store the repositories for editing before I pushed them to Git for the project code to be stored via GitHub.
 * [Unsplash](https://www.unsplash.com/) was used to locate and display a hero image on the site across all three pages.
 * [Bootstrap v5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) was used to style the site, particularly the containers in the About Us page, and the general responsiveness of the site across different devices.
 * [Google Fonts](https://fonts.google.com/) was used to import the 'Poppins' font into the style.css file which is used throughout the entire website.
