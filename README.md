@@ -1,5 +1,7 @@
 # The Big Cat Quiz
 
+![Preview of site shown on various Apple devices](assets/images/readme-main-image.png)
+
 [See the live website!](https://emilygsmith.github.io/cat-quiz-project-2/)
 
 ## About the Site
@@ -70,7 +72,7 @@ I wanted to continue the theme of cat-related projects and create a quiz revolvi
 ![About Us Page Preview](assets/images/about-preview-laptop.png)
 
 * The About Us page gives some context of the creators of the quiz, a cat charity named Feline Friends.
-* The page utilises Bootstrap containers to better divide the different sections of information, providing both contact information and opening hours as well as a general 'About Us' section.
+* The page utilises Bootstrap containers, providing both contact information and opening hours as well as a general 'About Us' section.
 * There are FontAwesome social media icons at the bottom of the page to take the user to the charity's respective social media pages.
 
 ### Give Feedback Page
