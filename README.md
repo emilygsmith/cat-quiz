@@ -2,6 +2,16 @@
 
 [See the live website!](https://emilygsmith.github.io/cat-quiz-project-2/)
 
+## About the Site
+
+I wanted to continue the theme of cat-related projects and create a quiz revolving around my favourite animal, the humble feline.
+
+* There are ten questions ranging in difficulty, and the user is able to keep track of the score and try again once the quiz is over to try and get the full 10/10 score.
+
+* Aside from the quiz on the main page, there is also an About Us page for the fictional charity behind the quiz, Feline Friends, and an additional page to get in touch.
+
+* There are future plans for the site to incorporate further quizzes, games and information on community events held by the charity to raise money for the cats in their care.
+
 ## Existing Features
 
 ### Navigation Bar
@@ -15,7 +25,7 @@
 
 ### Hero Image
 
-![Image of a girl and her cat on a keyboard](assets/images/main-image.png)
+![Image of a girl and her cat on a keyboard](assets/images/main-image-v2.png)
 
 * The hero image is present on all three pages.
 * The colour scheme of the rest of the site is based on the muted colours of the hero image.
@@ -36,15 +46,16 @@
 
 * The score in the score container underneath the main quiz content increases by 1 if a question is answered correctly.
 * If a question is answered incorrectly the score in the score container will remain the same.
-* The score container disappears after the final question is answered as the final result is displayed within the quote message at the end when the user's result is revealed.
 
 ### Quiz Completion
 
-![Quiz Completion Screen](assets/images/quiz-completed.png)
+![Quiz Completion Screen](assets/images/quiz-completed-low.png)
+![Quiz Completion Screen](assets/images/quiz-completed-avg.png)
+![Quiz Completion Screen](assets/images/quiz-completed-high.png)
 
 * Upon answering all ten questions, the user will receive one of three result messages dependent on whether they answered 1-3, 4-7 or 8-10 questions correctly.
 * A Reset Quiz button will appear underneath the result message, and if the user clicks, this will reset the quiz.
-* Once the quiz is reset it will take the user back to the first question and the score container will reappear, set back to zero.
+* Once the quiz is reset it will take the user back to the first question and the score container will be set back to zero.
 
 ### Footer
 
@@ -56,10 +67,15 @@
 
 ### About Us Page
 
+![About Us Page Preview](assets/images/about-preview-laptop.png)
+
 * The About Us page gives some context of the creators of the quiz, a cat charity named Feline Friends.
 * The page utilises Bootstrap containers to better divide the different sections of information, providing both contact information and opening hours as well as a general 'About Us' section.
+* There are FontAwesome social media icons at the bottom of the page to take the user to the charity's respective social media pages.
 
 ### Give Feedback Page
+
+![Give Feedback Page Preview](assets/images/feedback-preview-laptop.png)
 
 * The Feedback page includes a form which allows the user to enter their name/contact email address and any comments or requests they wish to pass on.
 * The user can enter their name, email address and any relevant comments and click the submit button.
@@ -141,7 +157,7 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 * As a first time visitor, I want to be able to easily navigate between pages on the site.
     * There is a navigation bar in relatively large font situated at the top of each page for easy navigation throughout the site.
     * Depending on what page the user is currently visiting, the page you are visiting will be greyed out, and the two links to the other two respective pages will be clickable.
-* As a first time visitor, I want to be able to complete a fully functional quiz that keeps track of my score along he way.
+* As a first time visitor, I want to be able to complete a fully functional quiz that keeps track of my score along the way.
     * The quiz on the site is fully functional and has a score container that keeps track of your score throughout.
     * The score container resets along with the questions when the user clicks on the 'Reset Quiz' button.
 * As a first time visitor, I want to be able to easily restart the quiz to try and improve my score and get 10/10.
@@ -187,9 +203,11 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 
 ## Validator Testing
 
-* HTML
-* CSS
-* JavaScript
+* [HTML - Homepage](assets/images/validator-html-index.png)
+* [HTML - About](assets/images/validator-html-about.png)
+* [HTML - Feedback](assets/images/validator-html-feedback.png)
+* [CSS](assets/images/validator-css.png)
+* [JavaScript](assets/images/validator-js.png)
 
 ## Lighthouse Testing
 
@@ -197,13 +215,13 @@ I have used a black and grey colour scheme in keeping with the hero image, to re
 
 ## Debugging
 
-* Debugging goes here
+* CSS Validator initally returned errors with an unclosed div tag and unnecessary closing break tag. I added the additional div and removed the closing break tag, re-ran the validator test, and all was returned OK.
 
 ## Credit
 
 ### Images
 
-* [Hero image credit](https://unsplash.com/photos/lz_VB9yEc_c)
+* Hero image from [Unsplash](https://unsplash.com/photos/lz_VB9yEc_c)
 
 ### Languages Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
